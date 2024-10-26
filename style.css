@@ -1,0 +1,22 @@
+.hidden{
+    display: none;
+}
+.addBooks{
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.addBookBtn{
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+.books{
+    display: flex;
+}
+.bookContainer{
+    padding-right: 20px;
+
+}
