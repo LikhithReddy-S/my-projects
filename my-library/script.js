@@ -60,12 +60,13 @@ function addBook(event){
     renderLibrary();
 
 }
-function loadLibrary(){
+function loadLibrary() {
     const storedLibrary = localStorage.getItem('library');
-    if (storedLibrary){
-        const books = JSON.parse(storedLibrary);
+    if (storedLibrary) {
+        library.splice(0, library.length, ...JSON.parse(storedLibrary)); // Update the library array
     }
-    renderLibrary()
+    renderLibrary();
 }
+
 window.onload = loadLibrary;
 document.getElementById("booksForm").addEventListener("submit",addBook);
